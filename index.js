@@ -1,17 +1,23 @@
 
 const myLibrary = []
 
-function book(title, author, pages, read) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-    this.info = () =>  (`${title} by ${author}, ${pages} pages, ${readInfo()} `) 
-    function readInfo () {
+
+class book{
+    readInfo () {
         if (read == 'no') {return "not read yet"}
         else {"has read"}
     }
+
+    constructor(title, author, pages, read) {
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+        this.info = () =>  (`${title} by ${author}, ${pages} pages, ${readInfo()} `) 
+    }
+
 }
+
 
 let hobbitBook = new book('The Hobbit', 'J.R.R. Tolkien', '200', 'Read' )
 
