@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="library"></div>
+<table class="libraryTable">
+    <caption>Your Library!</caption>
+    <tr>
+        <td></td>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read</th>
+        <td></td>
+    </tr>
+    <tbody class="tableBody">
+    </tbody>
+</table>
+     
+<dialog id="dialog">
+    <form method="dialog">
+        <div>
+            <label>
+                Title: <input name="title" type="text" id="inputTitle" autofocus>
+            </label>
+            <label>
+                Author: <input name="author" type="text" id="inputAuthor">
+            </label>
+        </div>
+        <div>
+            <label for="">
+                Number of pages: <input name="pages" type="number" id="inputPages">
+            </label>
+            <label for="">
+                Have you read? <input value="Has Read" name="read" type="checkbox" id="inputRead">
+            </label>
+        </div>
+
+        <button id="dialogClose" autofocus>Close</button> <button id="submitButton">Submit</button>
+    </form>
+</dialog>
+<button id="dialogButton">NEW BOOK</button>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.library > div {
+    padding: 20px;
+    margin: 10px;
+    background-color: lightgray;
+    border: 3px solid black;
+    width: 700px;
+}
+
+body{
+    background-color: beige;
+    font-size: medium;
+}
+
+button{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(255, 252, 248);
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-weight: 500;
+    font-size: medium;
+}
+
+table {
+    background-color: lightgray;
+    width: 100%;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+caption{
+    font-size: x-large;
+    font-weight: bold;
+}
